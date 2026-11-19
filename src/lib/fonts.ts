@@ -1,17 +1,15 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-// All fonts: Inter — Clean Swiss Minimal design system
-export const bodyFont = Inter({
-  subsets: ["latin"],
+// All fonts (body + headings): Inter — Clean Swiss Minimal design system
+export const bodyFont = localFont({
+  src: [
+    { path: "./fonts/Inter-variable.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/Inter-variable.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/Inter-variable.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/Inter-variable.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/Inter-variable.woff2", weight: "800", style: "normal" },
+    { path: "./fonts/Inter-variable.woff2", weight: "900", style: "normal" },
+  ],
   variable: "--font-body",
-  weight: ["400", "500", "600", "700", "800", "900"],
-  display: "swap",
-});
-
-// Use bodyFont as headingFont too — all Inter
-export const headingFont = Inter({
-  subsets: ["latin"],
-  variable: "--font-heading",
-  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });

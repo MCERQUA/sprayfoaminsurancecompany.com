@@ -61,10 +61,10 @@ const config: Config = {
         adobeDark: "#c5c5c5",
       },
       fontFamily: {
-        headline: ["'Inter'", 'system-ui', 'sans-serif'],
-        body: ["'Inter'", 'system-ui', 'sans-serif'],
-        label: ["'Inter'", 'system-ui', 'sans-serif'],
-        heading: ["'Inter'", 'system-ui', 'sans-serif'],
+        headline: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        label: ['var(--font-body)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-body)', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         arch: "0.5rem",
